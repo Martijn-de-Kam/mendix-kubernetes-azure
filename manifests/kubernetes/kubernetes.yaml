@@ -188,7 +188,7 @@ items:
       labels:
         app: "#{k8s.namespace}#"
       annotations:
-        service.beta.kubernetes.io/azure-load-balancer-internal: true
+        service.beta.kubernetes.io/azure-load-balancer-internal: "true"
     spec:
       selector:
         app: "#{k8s.namespace}#"
